@@ -25,7 +25,6 @@ def mouseClick(event):
         green = Color(0x00ff00, 1)
         line = LineStyle(3,green)
         rectangle = RectangleAsset(100,100,line,green)
-    
-Sprite(rectangle)
+    Sprite(rectangle)
 App().listenMouseEvent('click', mouseClick)
 App.run()
