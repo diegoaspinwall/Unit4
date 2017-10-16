@@ -5,8 +5,6 @@
 from random import randint
 from ggame import *
 
-
-
 def mouseClick(event):
     numcolor = randint(1,4)
     if numcolor==1:
