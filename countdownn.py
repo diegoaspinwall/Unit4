@@ -6,3 +6,5 @@ def countdownn(n):
     for(n,0):
         print(n)
     print('BOOM!')
+
+countdownn(5)
