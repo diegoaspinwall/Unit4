@@ -12,19 +12,19 @@ def mouseClick(event):
     if numcolor==1:
         red = Color(0xff0000, 1)
         line = LineStyle(3,red)
-        rectangle = RectangleAsset(100,100,line,red)
+        rectangle = RectangleAsset(1000,1000,line,red)
     elif numcolor==2:
         blue = Color(0x0000ff, 1)
         line = LineStyle(3,blue)
-        rectangle = RectangleAsset(100,100,line,blue)
+        rectangle = RectangleAsset(1000,1000,line,blue)
     elif numcolor==3:
         yellow = Color(0xffff00, 1)
         line = LineStyle(3,yellow)
-        rectangle = RectangleAsset(100,100,line,yellow)
+        rectangle = RectangleAsset(1000,1000,line,yellow)
     elif numcolor==4:
         green = Color(0x00ff00, 1)
         line = LineStyle(3,green)
-        rectangle = RectangleAsset(100,100,line,green)
+        rectangle = RectangleAsset(1000,1000,line,green)
     Sprite(rectangle)
 App().listenMouseEvent('click', mouseClick)
 App().run()
