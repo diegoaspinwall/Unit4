@@ -3,8 +3,9 @@
 #countdownn.py
 
 def countdownn(n):
-    for(n,0,-1):
+    while n>0:
         print(n)
+        n=n-1
     print('BOOM!')
 
 countdownn(5)
