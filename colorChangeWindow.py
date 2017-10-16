@@ -27,4 +27,4 @@ def mouseClick(event):
         rectangle = RectangleAsset(100,100,line,green)
     Sprite(rectangle)
 App().listenMouseEvent('click', mouseClick)
-App.run()
+App().run()
