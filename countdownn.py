@@ -3,7 +3,7 @@
 #countdownn.py
 
 def countdownn(n):
-    for(n,0):
+    for(n,0,-1):
         print(n)
     print('BOOM!')
 
