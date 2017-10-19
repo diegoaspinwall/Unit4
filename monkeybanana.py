@@ -23,4 +23,5 @@ if __name__ == '__main__':
     Sprite(monkeyBox)
     Sprite(bananaBox,((COLS*CELL_SIZE)/2,(ROWS*CELL_SIZE)/2))
     
+    App().listenKeyEvent('keydown','right arrow',moveRight)
     App().run()
