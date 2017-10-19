@@ -32,8 +32,8 @@ def moveDown(event):
             moveBanana()
 
 def moveBanana():
-    banana.x = randint(0,COLS-1)*CELL*SIZE
-    banana.y = randint(0,ROWS-1)*CELL*SIZE
+    banana.x = randint(0,COLS-1)*CELL_SIZE
+    banana.y = randint(0,ROWS-1)*CELL_SIZE
 
 
 if __name__ == '__main__':
