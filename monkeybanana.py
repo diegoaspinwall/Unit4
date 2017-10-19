@@ -10,7 +10,8 @@ COLS = 40
 CELL_SIZE = 20
 
 def moveRight(event):
-    monkey.x += CELL_SIZE
+    if monkey.x < (COLS-1)*CELL_SIZE
+        monkey.x += CELL_SIZE
 def moveLeft(event):
     monkey.x -= CELL_SIZE
 def moveUp(event):
