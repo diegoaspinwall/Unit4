@@ -6,5 +6,5 @@ def printSquares(x,y):
     totalx=0
     for i in range (0,x):
         print('+ -- '*x, '+')
-        print()
+        print('|    '*x, '|')
 printSquares(2,3)
