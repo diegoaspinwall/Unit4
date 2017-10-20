@@ -4,7 +4,8 @@
 
 def printSquares(x,y):
     totalx=0
-    for i in range (0,x):
-        print('+ -- '*x, '+')
-        print('|    '*x, '|')
+    for j in range(0,y)
+        for i in range(0,x):
+            print('+ -- '*x, '+')
+            print('|    '*x, '|')
 printSquares(5,3)
