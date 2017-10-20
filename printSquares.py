@@ -7,3 +7,4 @@ def printSquares(x,y):
     for i in range (0,x):
         print('+--'*x, '+')
         print()
+printSquares(2,3)
