@@ -3,9 +3,9 @@
 #printSquares.py
 
 def printSquares(x,y):
-    totalx=0
-    for j in range(0,y)
-        for i in range(0,x):
+    for j in range(0,y):
+        for i in range(0,1):
             print('+ -- '*x, '+')
             print('|    '*x, '|')
-printSquares(5,3)
+    print('+ -- '*x, '+')
+printSquares(2,3)
