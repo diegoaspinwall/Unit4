@@ -43,7 +43,7 @@ def updateScore():
     data['score'] += 10
     data['scoreText'].destroy()
     scoreBox = TextAsset('Score = '+str(data['score']))
-    data['scoreText'] = Sprite(scoreBox,(CELL_SIZE,(ROWS-2)*CELL_SIZE))
+    data['scoreText'] = Sprite(scoreBox,(CELL_SIZE,(ROWS-3)*CELL_SIZE))
 
 if __name__ == '__main__':
     
@@ -62,7 +62,7 @@ if __name__ == '__main__':
     Sprite(jungleBox)
     banana = Sprite(bananaBox,((COLS*CELL_SIZE)/2,(ROWS*CELL_SIZE)/2))
     monkey = Sprite(monkeyBox)
-    data['scoreText'] = Sprite(scoreBox,(CELL_SIZE,(ROWS-2)*CELL_SIZE))
+    data['scoreText'] = Sprite(scoreBox,(CELL_SIZE,(ROWS-3)*CELL_SIZE))
     
     App().listenKeyEvent('keydown','right arrow',moveRight)
     App().listenKeyEvent('keydown','left arrow',moveLeft)
