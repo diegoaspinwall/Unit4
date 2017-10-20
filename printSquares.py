@@ -7,4 +7,4 @@ def printSquares(x,y):
     for i in range (0,x):
         print('+ -- '*x, '+')
         print('|    '*x, '|')
-printSquares(2,3)
+printSquares(5,3)
