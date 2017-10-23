@@ -3,8 +3,9 @@
 #warmup11.py
 
 def isPrime(n):
-    if n%2==0 and n%3==0 and n%7==0:
+    if n%2 != 0 or n%3 != 0 or n%5 !=0:
         return True
     else:
         return False
 
+isPrime(17)
