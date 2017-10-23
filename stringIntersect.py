@@ -5,7 +5,7 @@
 def stringIntersect(word1,word2):
     ans = ''
     for ch in str.lower(word1):
-        if ch in str.lower(word2):
+        if ch in str.lower(word2) and ch not in ans:
             ans += ch
     print(ans)
 
