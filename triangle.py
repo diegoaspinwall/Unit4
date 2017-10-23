@@ -2,12 +2,12 @@
 #10-23-17
 #triangle.py
 
-x1 = int(input(x1 = '))
-y1 = int(input(y1 = '))
-x2 = int(input(x2 = '))
-y2 = int(input(y2 = '))
-x3 = int(input(x3 = '))
-y3 = int(input(y3 = '))
+x1 = int(input('x1 = '))
+y1 = int(input('y1 = '))
+x2 = int(input('x2 = '))
+y2 = int(input('y2 = '))
+x3 = int(input('x3 = '))
+y3 = int(input('y3 = '))
 
 def distance(z,d,y,q):
     return (((z-y)**2+(d-q)**2)**(1/2))
