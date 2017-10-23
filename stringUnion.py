@@ -4,7 +4,7 @@
 
 def stringUnion(word1,word2):
     ans = ''
-    megaword = word1+word2
+    megaword = str.lower(word1+word2)
     for ch in megaword:
         if ch not in ans:
             ans += ch
