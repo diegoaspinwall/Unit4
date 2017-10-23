@@ -6,9 +6,7 @@ def stringUnion(word1,word2):
     ans = ''
     megaword = word1+word2
     for ch in megaword:
-        if ch in megaword:
-            
-        else:
+        if ch not in megaword:
             ans += ch
     print(ans)
 
