@@ -8,6 +8,12 @@ nicejob():
     nice = randint(1,4)
     if nice == 1:
         print('')
+    if nice == 2:
+        print('')
+    if nice == 3:
+        print('')
+    if nice == 4:
+        print('')
 
 total = 0
 while total<5:
