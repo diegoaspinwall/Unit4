@@ -4,7 +4,7 @@
 
 from random import randint
 
-nicejob():
+def nicejob():
     nice = randint(1,4)
     if nice == 1:
         print('Watch out world, here comes the next great multiplier!')
@@ -19,7 +19,8 @@ total = 0
 while total<5:
     num1 = randint(1,12)
     num2 = randint(1,12)
-    guess = int(input(num1, ' x ', num2,' = '))
+    print(num1, ' x ', num2,' = ')
+    guess = int(input('?'))
     if num1*num2 == guess:
         total += 1
     else:
