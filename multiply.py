@@ -20,7 +20,7 @@ while total<5:
     num1 = randint(1,12)
     num2 = randint(1,12)
     print(num1, ' x ', num2,' = ')
-    guess = int(input('?'))
+    guess = int(input('? '))
     if num1*num2 == guess:
         total += 1
     else:
