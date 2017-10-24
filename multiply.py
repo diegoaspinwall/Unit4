@@ -7,13 +7,13 @@ from random import randint
 nicejob():
     nice = randint(1,4)
     if nice == 1:
-        print('')
+        print('Watch out world, here comes the next great multiplier!')
     if nice == 2:
-        print('')
+        print('Nice fricking job dude')
     if nice == 3:
-        print('')
+        print("You're better than Clay at multiplying")
     if nice == 4:
-        print('')
+        print('Now try getting a job')
 
 total = 0
 while total<5:
