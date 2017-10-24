@@ -4,13 +4,13 @@
 
 from random import randint
 from ggame import *
-
+"""
 def mouseClick(event):
     numcolor = randint(1,4)
     if numcolor==1:
         red = Color(0xff0000, 1)
         line = LineStyle(3,red)
-        circle = CircleAsset(1000,1000,line,red)
+        circle = CircleAsset(,line,red)
     elif numcolor==2:
         blue = Color(0x0000ff, 1)
         line = LineStyle(3,blue)
@@ -26,3 +26,20 @@ def mouseClick(event):
     Sprite(rectangle)
 App().listenMouseEvent('click', mouseClick)
 App().run()
+"""
+def mouseClick(event):
+    numcolor = randint(1,4)
+    if numcolor==1:
+        color = Color(0xff0000, 1)
+    elif numcolor==2:
+        color = Color(0x0000ff, 1)
+    elif numcolor==3:
+        color = Color(0xffff00, 1)
+    elif numcolor==4:
+        color = Color(0x00ff00, 1)
+    line = LineStyle(3,color)
+    circle = CircleAsset(line,color)
+    Sprite(circle)
+App().listenMouseEvent('click', mouseClick)
+App().run()
+
