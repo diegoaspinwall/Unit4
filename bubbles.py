@@ -18,7 +18,7 @@ def mouseClick(event):
     line = LineStyle(3,color)
     radius = randint(1,200)
     circle = CircleAsset(radius,line,color)
-    Sprite(circle, (randint(radius,201),randint(radius,201)))
+    Sprite(circle, (randint(radius,200),randint(radius,200)))
 App().listenMouseEvent('click', mouseClick)
 App().run()
 
