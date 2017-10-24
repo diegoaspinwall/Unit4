@@ -5,7 +5,9 @@
 from random import randint
 
 nicejob():
-    
+    nice = randint(1,4)
+    if nice == 1:
+        print('')
 
 total = 0
 while total<5:
