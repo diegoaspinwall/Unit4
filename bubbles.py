@@ -21,4 +21,3 @@ def mouseClick(event):
     Sprite(circle, (randint(radius,200),randint(radius,200)))
 App().listenMouseEvent('click', mouseClick)
 App().run()
-
