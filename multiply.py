@@ -22,7 +22,7 @@ while total<5:
     guess = int(input(num1, ' x ', num2,' = '))
     if num1*num2 == guess:
         total += 1
-        nicejob()
     else:
         print('Sorry, incorrect')
 
+nicejob()
