@@ -4,17 +4,18 @@
 
 from ggame import *
 def moveCircle():
-    """circle.x = circle.x+1
+    
+    circle.x = circle.x+1
     circle.y = circle.y+1
-    """
+    
     if circle.y > 0:
-        circle.y = circle.y + 1
-    if circle.y < 550:
         circle.y = circle.y - 1
+    if circle.y < 550:
+        circle.y = circle.y + 1
     if circle.x > 0:
-        circle.x = circle.x + 1
-    if circle.x < 950:
         circle.x = circle.x - 1
+    if circle.x < 950:
+        circle.x = circle.x + 1
     
 def step():
     moveCircle()
