@@ -4,8 +4,8 @@
 
 from ggame import *
 def moveCircle():
-    circle.x = circle.x+1
-    circle.y = circle.y+1
+    circle.x = circle.x+3
+    circle.y = circle.y+3
     """
     if circle.y > 0:
         circle.y -= ?
