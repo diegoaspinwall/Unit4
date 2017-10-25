@@ -10,11 +10,11 @@ def moveCircle():
     
     if circle.y > 0:
         circle.y -= ?
-    if circle.y < 600:
+    if circle.y < 550:
         circle.y += ?
     if circle.x > 0:
         circle.x -= ?
-    if circle.x < 1000:
+    if circle.x < 950:
         circle.x += ?
     
 def step():
