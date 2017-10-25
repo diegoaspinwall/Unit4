@@ -5,8 +5,7 @@
 from ggame import *
 def moveCircle():
     circle.x = circle.x+1
-    cicle.y = circle.y+1
-    data['frames'] = 0
+    circle.y = circle.y+1
     
     if circle.y > 0:
         circle.y -= ?
