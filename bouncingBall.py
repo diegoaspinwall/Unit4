@@ -23,11 +23,11 @@ def step():
 if __name__ == '__main__':
     
     data = {}
-    data['directionx'] = 1000
-    data['directiony'] = 1000
+    data['directionx'] = 10
+    data['directiony'] = 10
     
     black = Color(0x000000,1)
-    green = Color(0x00FF00,1)
+    green = Color(0x0000FF,1)
     
     greenCircle = CircleAsset(50,LineStyle(1,green),green)
     blackRectangle = RectangleAsset(1000,600,LineStyle(1,black),black)
