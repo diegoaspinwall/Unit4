@@ -6,7 +6,7 @@ from ggame import *
 def moveCircle():
     circle.x = circle.x+1
     circle.y = circle.y+1
-    
+    """
     if circle.y > 0:
         circle.y -= ?
     if circle.y < 550:
@@ -15,11 +15,11 @@ def moveCircle():
         circle.x -= ?
     if circle.x < 950:
         circle.x += ?
-    
+    """
 def step():
     moveCircle()
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     
     black = Color(0x000000,1)
     green = Color(0x00FF00,1)
