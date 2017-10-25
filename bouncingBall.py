@@ -5,16 +5,16 @@
 from ggame import *
 def moveCircle():
     
-    circle.x = circle.x+1
-    circle.y = circle.y+1
+    circle.x = circle.x+data['directionx']
+    circle.y = circle.y+data['directiony']
     
-    if circle.y > 50:
-        circle.y = circle.y - 1
-    if circle.y < 550:
+    if circle.y == 50:
+        data['directiony'] = -1*data['directiony']
+    if circle.y == 550:
         circle.y = circle.y + 1
-    if circle.x > 50:
+    if circle.x == 50:
         circle.x = circle.x - 1
-    if circle.x < 950:
+    if circle.x == 950:
         circle.x = circle.x + 1
     
 def step():
@@ -23,8 +23,8 @@ def step():
 if __name__ == '__main__':
     
     data = {}
-    data['directionx'] = 0
-    data['directiony'] = 0
+    data['directionx'] = 1
+    data['directiony'] = 1
     
     black = Color(0x000000,1)
     green = Color(0x00FF00,1)
