@@ -23,8 +23,8 @@ def step():
 if __name__ == '__main__':
     
     data = {}
-    data['directionx'] = 1
-    data['directiony'] = 1
+    data['directionx'] = 1000
+    data['directiony'] = 1000
     
     black = Color(0x000000,1)
     green = Color(0x00FF00,1)
