@@ -23,4 +23,4 @@ if _name_ == '_main_':
     
     Sprite(blackRectangle)
     ball = Sprite(greenCircle, (50,50))
-    App().run()
+    App().run(step)
