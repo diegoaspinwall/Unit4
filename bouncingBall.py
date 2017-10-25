@@ -18,9 +18,7 @@ def moveCircle():
         circle.x += ?
     
 def step():
-    data['frames'] += 1
-    if data['frames'] == 1:
-        moveCircle()
+    moveCircle()
 
 if _name_ == '_main_':
     
@@ -31,5 +29,5 @@ if _name_ == '_main_':
     blackRectangle = RectangleAsset(1000,600,LineStyle(1,black),black)
     
     Sprite(blackRectangle)
-    ball = Sprite(greenCircle, (50,50))
+    circle = Sprite(greenCircle, (50,50))
     App().run(step)
