@@ -12,9 +12,6 @@ def moveCircle():
         data['directiony'] = -1*data['directiony']
     if circle.x == 50 or circle.x == 950:
         data['directionx'] = -1*data['directionx']
-    
-def step():
-    moveCircle()
 
 if __name__ == '__main__':
     
@@ -30,4 +27,4 @@ if __name__ == '__main__':
     
     Sprite(blackRectangle)
     circle = Sprite(greenCircle, (50,50))
-    App().run(step)
+    App().run(moveCircle)
