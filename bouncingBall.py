@@ -8,13 +8,9 @@ def moveCircle():
     circle.x = circle.x+data['directionx']
     circle.y = circle.y+data['directiony']
     
-    if circle.y == 50:
+    if circle.y == 50 or circle.y == 550:
         data['directiony'] = -1*data['directiony']
-    if circle.y == 550:
-        data['directiony'] = -1*data['directiony']
-    if circle.x == 50:
-        data['directionx'] = -1*data['directionx']
-    if circle.x == 950:
+    if circle.x == 50 or circle.x == 950:
         data['directionx'] = -1*data['directionx']
     
 def step():
