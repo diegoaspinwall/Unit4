@@ -7,7 +7,16 @@ def moveCircle():
     circle.x = circle.x+1
     cicle.y = circle.y+1
     data['frames'] = 0
-
+    
+    if circle.y > 0:
+        circle.y -= ?
+    if circle.y < 600:
+        circle.y += ?
+    if circle.x > 0:
+        circle.x -= ?
+    if circle.x < 1000:
+        circle.x += ?
+    
 def step():
     data['frames'] += 1
     if data['frames'] == 1:
