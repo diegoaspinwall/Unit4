@@ -4,8 +4,8 @@
 
 from ggame import *
 def moveCircle():
-    circle.x = circle.x+3
-    circle.y = circle.y+3
+    circle.x = circle.x+1
+    circle.y = circle.y+1
     """
     if circle.y > 0:
         circle.y -= ?
@@ -20,9 +20,9 @@ def step():
     moveCircle()
 
 if __name__ == '__main__':
-    
+    """
     data = {}
-    
+    """
     
     black = Color(0x000000,1)
     green = Color(0x00FF00,1)
