@@ -5,16 +5,12 @@
 from ggame import *
 transp = 1
 def moveCircle():
-    circle.x = circle.x - .5
-    circle.y = circle.y - 1
-    data['transp']=data['transp']-.01
+    circle.x = circle.x - .05
+    circle.y = circle.y - .1
 
 if __name__ == '__main__':
-    
-    data = {}
-    data['transp'] = 1
 
-    black = Color(0x66B2FF,data['transp'])
+    black = Color(0x111111,1)
     green = Color(0xFFFF66,1)
     
     greenCircle = CircleAsset(50,LineStyle(1,green),green)
