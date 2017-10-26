@@ -10,7 +10,7 @@ def moveCircle():
 
 if __name__ == '__main__':
 
-    black = Color(0x111111,1)
+    black = Color(0xffffff,1)
     green = Color(0xFFFF66,1)
     
     greenCircle = CircleAsset(50,LineStyle(1,green),green)
