@@ -14,7 +14,7 @@ if __name__ == '__main__':
     data = {}
     data['transp'] = 1
 
-    black = Color(0x66B2FF,transp)
+    black = Color(0x66B2FF,data['transp'])
     green = Color(0xFFFF66,1)
     
     greenCircle = CircleAsset(50,LineStyle(1,green),green)
