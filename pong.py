@@ -12,10 +12,16 @@ PADDLE_Y = 200
 
 def moveUp(event):
     if paddle1.y > 0:
-        paddle1.y -= 10
+        paddle1.y -= 40
 def moveDown(event):
     if paddle1.y < Y_LENGTH-PADDLE_Y:
-        paddle1.y += 10
+        paddle1.y += 40
+def moveUp2(event):
+    if paddle2.y > 0:
+        paddle2.y -= 40
+def moveDown2(event):
+    if paddle2.y < Y_LENGTH-PADDLE_Y:
+        paddle2.y += 40
 
 
 def moveCircle():
@@ -50,4 +56,6 @@ if __name__ == '__main__':
     
     App().listenKeyEvent('keydown','up arrow',moveUp)
     App().listenKeyEvent('keydown','down arrow',moveDown)
+    App().listenKeyEvent('keydown','w',moveUp2)
+    App().listenKeyEvent('keydown','s',moveDown2)
     App().run(moveCircle)
