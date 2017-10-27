@@ -35,10 +35,12 @@ if __name__ == '__main__':
     data['directiony'] = 10
     
     black = Color(0x000000,1)
-    green = Color(0x0000FF,1)
+    green = Color(0x00FF00,1)
+    blue = Color(0x0000FF)
     
     greenCircle = CircleAsset(CIRCLE_R,LineStyle(1,green),green)
     blackRectangle = RectangleAsset(X_LENGTH,Y_LENGTH,LineStyle(1,black),black)
+    paddle1 = RectangleAsset(PADDLE_X,PADDLE_Y,LineStyle(1,blue), blue)
     
     Sprite(blackRectangle)
     circle = Sprite(greenCircle, (CIRCLE_R,CIRCLE_R))
