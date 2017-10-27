@@ -27,7 +27,7 @@ if __name__ == '__main__':
     green = Color(0x0000FF,1)
     
     greenCircle = CircleAsset(50,LineStyle(1,green),green)
-    blackRectangle = RectangleAsset(X_LENGHT,Y_LENGTH,LineStyle(1,black),black)
+    blackRectangle = RectangleAsset(X_LENGTH,Y_LENGTH,LineStyle(1,black),black)
     
     Sprite(blackRectangle)
     circle = Sprite(greenCircle, (50,50))
