@@ -7,6 +7,16 @@ from ggame import *
 X_LENGTH = 1000
 Y_LENGTH = 600
 CIRCLE_R = 40
+PADDLE_X = 20
+PADDLE_Y = 100
+
+def moveUp(event):
+    if paddle.y > 0:
+        paddle.y -= CELL_SIZE
+def moveDown(event):
+    if paddle.y < (ROWS-1)*CELL_SIZE:
+        paddle.y += CELL_SIZE
+
 
 def moveCircle():
     
