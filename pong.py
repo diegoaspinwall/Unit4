@@ -25,14 +25,14 @@ def moveCircle():
     
     if circle.y == CIRCLE_R or circle.y == Y_LENGTH-CIRCLE_R:
         data['directiony'] = -1*data['directiony']
-    '''if circle.x == CIRCLE_R or circle.x == X_LENGTH-CIRCLE_R:
-        data['directionx'] = -1*data['directionx']'''
+    if circle.x == CIRCLE_R or circle.x == X_LENGTH-CIRCLE_R:
+        data['directionx'] = -1*data['directionx']
 
 if __name__ == '__main__':
     
     data = {}
     data['directionx'] = 10
-    #data['directiony'] = 10
+    data['directiony'] = 10
     data['p1'] = 0
     data['p2'] = 0
     
