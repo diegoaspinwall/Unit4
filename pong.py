@@ -40,9 +40,11 @@ if __name__ == '__main__':
     
     greenCircle = CircleAsset(CIRCLE_R,LineStyle(1,green),green)
     blackRectangle = RectangleAsset(X_LENGTH,Y_LENGTH,LineStyle(1,black),black)
-    paddle1 = RectangleAsset(PADDLE_X,PADDLE_Y,LineStyle(1,blue), blue)
-    paddle2 = RectangleAsset(PADDLE_X,PADDLE_Y,LineStyle(1,blue), blue)
+    paddleBox1 = RectangleAsset(PADDLE_X,PADDLE_Y,LineStyle(1,blue), blue)
+    paddleBox2 = RectangleAsset(PADDLE_X,PADDLE_Y,LineStyle(1,blue), blue)
     
     Sprite(blackRectangle)
     circle = Sprite(greenCircle, (CIRCLE_R,CIRCLE_R))
+    paddle1 = Sprite(paddleBox1, ((Y_LENGTH/2-PADDLE_Y/2),(X_LENGTH-PADDLE_X)))
+    paddle2 = 
     App().run(moveCircle)
