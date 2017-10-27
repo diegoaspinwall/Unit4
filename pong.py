@@ -35,6 +35,8 @@ def moveCircle():
         data['directionx'] = -1*data['directionx']
     if circle.x == CIRCLE_R:
         data['directionx'] = -1*data['directionx']
+    if circle.x==X_LENGTH-(CIRCLE_R+PADDLE_X) and paddle1.y<circle.y<paddle1.y+PADDLE_Y:
+        data['directionx'] = -1*data['directionx']
     if circle.x == (X_LENGTH-CIRCLE_R):
         data['directionx'] = -1*data['directionx']
 
