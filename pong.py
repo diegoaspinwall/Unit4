@@ -7,8 +7,8 @@ from ggame import *
 X_LENGTH = 1000
 Y_LENGTH = 600
 CIRCLE_R = 40
-PADDLE_X = 20
-PADDLE_Y = 100
+PADDLE_X = 40
+PADDLE_Y = 200
 
 def moveUp(event):
     if paddle.y > 0:
@@ -46,5 +46,5 @@ if __name__ == '__main__':
     Sprite(blackRectangle)
     circle = Sprite(greenCircle, (CIRCLE_R,CIRCLE_R))
     paddle1 = Sprite(paddleBox1, ((X_LENGTH-PADDLE_X),(Y_LENGTH/2-PADDLE_Y/2)))
-    paddle2 = Sprite(paddleBox1, ((PADDLE_X),(Y_LENGTH/2-PADDLE_Y/2)))
+    paddle2 = Sprite(paddleBox1, ((0),(Y_LENGTH/2-PADDLE_Y/2)))
     App().run(moveCircle)
