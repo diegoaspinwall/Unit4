@@ -12,10 +12,10 @@ PADDLE_Y = 200
 
 def moveUp(event):
     if paddle1.y > 0:
-        paddle1.y -= data[p1]
+        paddle1.y -= 10
 def moveDown(event):
     if paddle1.y < Y_LENGTH-Y_LENGTH:
-        paddle1.y += data[p1]
+        paddle1.y += 10
 
 
 def moveCircle():
