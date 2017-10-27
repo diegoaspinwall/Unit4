@@ -14,7 +14,7 @@ def moveUp(event):
     if paddle1.y > 0:
         paddle1.y -= 10
 def moveDown(event):
-    if paddle1.y < Y_LENGTH-Y_LENGTH:
+    if paddle1.y < Y_LENGTH-PADDLE_Y:
         paddle1.y += 10
 
 
