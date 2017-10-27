@@ -3,14 +3,18 @@
 #bouncingBall.py
 
 from ggame import *
+
+X_LENGTH = 1000
+Y_LENGTH = 600
+
 def moveCircle():
     
     circle.x = circle.x+data['directionx']
     circle.y = circle.y+data['directiony']
     
-    if circle.y == 50 or circle.y == 550:
+    if circle.y == 50 or circle.y == Y_LENGTH-50:
         data['directiony'] = -1*data['directiony']
-    if circle.x == 50 or circle.x == 950:
+    if circle.x == 50 or circle.x == X_LENGTH-50:
         data['directionx'] = -1*data['directionx']
 
 if __name__ == '__main__':
@@ -23,7 +27,7 @@ if __name__ == '__main__':
     green = Color(0x0000FF,1)
     
     greenCircle = CircleAsset(50,LineStyle(1,green),green)
-    blackRectangle = RectangleAsset(1000,600,LineStyle(1,black),black)
+    blackRectangle = RectangleAsset(X_LENGHT,Y_LENGTH,LineStyle(1,black),black)
     
     Sprite(blackRectangle)
     circle = Sprite(greenCircle, (50,50))
