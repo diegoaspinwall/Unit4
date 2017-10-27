@@ -6,7 +6,7 @@ from ggame import *
 
 X_LENGTH = 1000
 Y_LENGTH = 600
-CIRCLE_R = 40
+CIRCLE_R = 20
 PADDLE_X = 40
 PADDLE_Y = 200
 
