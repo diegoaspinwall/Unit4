@@ -46,5 +46,5 @@ if __name__ == '__main__':
     Sprite(blackRectangle)
     circle = Sprite(greenCircle, (CIRCLE_R,CIRCLE_R))
     paddle1 = Sprite(paddleBox1, ((Y_LENGTH/2-PADDLE_Y/2),(X_LENGTH-PADDLE_X)))
-    paddle2 = 
+    paddle2 = Sprite(paddleBox1, ((Y_LENGTH/2-PADDLE_Y/2),(PADDLE_X)))
     App().run(moveCircle)
