@@ -33,8 +33,6 @@ if __name__ == '__main__':
     data = {}
     data['directionx'] = 10
     data['directiony'] = 10
-    data['p1'] = 0
-    data['p2'] = 0
     
     black = Color(0x000000,1)
     green = Color(0x00FF00,1)
