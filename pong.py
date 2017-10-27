@@ -11,11 +11,11 @@ PADDLE_X = 40
 PADDLE_Y = 200
 
 def moveUp(event):
-    if paddle.y > 0:
-        paddle.y -= CELL_SIZE
+    if paddle1.y > 0:
+        paddle1.y -= ?
 def moveDown(event):
-    if paddle.y < (ROWS-1)*CELL_SIZE:
-        paddle.y += CELL_SIZE
+    if paddle1.y < Y_LENGTH-Y_LENGTH:
+        paddle1.y += ?
 
 
 def moveCircle():
@@ -32,7 +32,9 @@ if __name__ == '__main__':
     
     data = {}
     data['directionx'] = 10
-    data['directiony'] = 10
+    #data['directiony'] = 10
+    data['p1'] = 0
+    data['p2'] = 0
     
     black = Color(0x000000,1)
     green = Color(0x00FF00,1)
@@ -44,7 +46,10 @@ if __name__ == '__main__':
     paddleBox2 = RectangleAsset(PADDLE_X,PADDLE_Y,LineStyle(1,blue), blue)
     
     Sprite(blackRectangle)
-    circle = Sprite(greenCircle, (CIRCLE_R,CIRCLE_R))
+    circle = Sprite(greenCircle, (CIRCLE_R+10,CIRCLE_R+10))
     paddle1 = Sprite(paddleBox1, ((X_LENGTH-PADDLE_X),(Y_LENGTH/2-PADDLE_Y/2)))
     paddle2 = Sprite(paddleBox1, ((0),(Y_LENGTH/2-PADDLE_Y/2)))
+    
+    App().listenKeyEvent('keydown','up arrow',moveUp)
+    App().listenKeyEvent('keydown','down arrow',moveDown)
     App().run(moveCircle)
