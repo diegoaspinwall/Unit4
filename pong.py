@@ -34,11 +34,15 @@ def moveCircle():
     if circle.x==CIRCLE_R+PADDLE_X and paddle2.y<circle.y<paddle2.y+PADDLE_Y:
         data['directionx'] = -1*data['directionx']
     if circle.x == CIRCLE_R:
-        data['directionx'] = -1*data['directionx']
+        #data['directionx'] = -1*data['directionx']
+        circle.x = CIRCLE_R+PADDLE_X+10
+        circle.y = CIRCLE_R+10
+        data['directionx'] = 10
+        data['directiony'] = 10
     if circle.x==X_LENGTH-(CIRCLE_R+PADDLE_X) and paddle1.y<circle.y<paddle1.y+PADDLE_Y:
         data['directionx'] = -1*data['directionx']
     if circle.x == (X_LENGTH-CIRCLE_R):
-        data['directionx'] = -1*data['directionx']
+        #data['directionx'] = -1*data['directionx']
 
 if __name__ == '__main__':
     
