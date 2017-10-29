@@ -57,7 +57,8 @@ if __name__ == '__main__':
     black = Color(0x000000,1)
     circcolor = Color(0xffffff,1)
     padcolor = Color(0xffffff,1)
-    scoreBox = TextAsset('0 | 0', fill=white)
+    scorecolor = Color(0xffffff,1)
+    scoreBox = TextAsset('0 | 0', fill=scorecolor)
     
     colorCircle = CircleAsset(CIRCLE_R,LineStyle(1,circcolor),circcolor)
     blackRectangle = RectangleAsset(X_LENGTH,Y_LENGTH,LineStyle(1,black),black)
