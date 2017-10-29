@@ -60,13 +60,12 @@ if __name__ == '__main__':
     
     greenCircle = CircleAsset(CIRCLE_R,LineStyle(1,green),green)
     blackRectangle = RectangleAsset(X_LENGTH,Y_LENGTH,LineStyle(1,black),black)
-    paddleBox1 = RectangleAsset(PADDLE_X,PADDLE_Y,LineStyle(1,blue), blue)
-    paddleBox2 = RectangleAsset(PADDLE_X,PADDLE_Y,LineStyle(1,blue), blue)
+    paddleBox = RectangleAsset(PADDLE_X,PADDLE_Y,LineStyle(1,blue), blue)
     
     Sprite(blackRectangle)
     circle = Sprite(greenCircle, (CIRCLE_R+PADDLE_X+10,CIRCLE_R+10))
-    paddle1 = Sprite(paddleBox1, ((X_LENGTH-PADDLE_X),(Y_LENGTH/2-PADDLE_Y/2)))
-    paddle2 = Sprite(paddleBox1, ((0),(Y_LENGTH/2-PADDLE_Y/2)))
+    paddle1 = Sprite(paddleBox, ((X_LENGTH-PADDLE_X),(Y_LENGTH/2-PADDLE_Y/2)))
+    paddle2 = Sprite(paddleBox, ((0),(Y_LENGTH/2-PADDLE_Y/2)))
     
     App().listenKeyEvent('keydown','up arrow',moveUp)
     App().listenKeyEvent('keydown','down arrow',moveDown)
