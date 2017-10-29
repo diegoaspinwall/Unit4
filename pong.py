@@ -46,6 +46,13 @@ def moveCircle():
         data['directionx'] = 10
         data['directiony'] = 10
 
+def updateScore():
+    data['score'] += 1
+    data['scoreText'].destroy()
+    scoreBox = TextAsset('Score = '+str(data['score']))
+    data['scoreText'] = Sprite(scoreBox)
+
+
 if __name__ == '__main__':
     
     data = {}
