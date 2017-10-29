@@ -53,8 +53,8 @@ if __name__ == '__main__':
     data['directiony'] = 10
     
     black = Color(0x000000,1)
-    circcolor = Color(0x0000ff,1)
-    padcolor = Color(0xffffFF,1)
+    circcolor = Color(0xffffff,1)
+    padcolor = Color(0xffffff,1)
     
     colorCircle = CircleAsset(CIRCLE_R,LineStyle(1,circcolor),circcolor)
     blackRectangle = RectangleAsset(X_LENGTH,Y_LENGTH,LineStyle(1,black),black)
