@@ -56,7 +56,7 @@ if __name__ == '__main__':
     paddleBox2 = RectangleAsset(PADDLE_X,PADDLE_Y,LineStyle(1,blue), blue)
     
     Sprite(blackRectangle)
-    circle = Sprite(greenCircle, (CIRCLE_R+10,CIRCLE_R+10))
+    circle = Sprite(greenCircle, (CIRCLE_R+PADDLE_X+10,CIRCLE_R+10))
     paddle1 = Sprite(paddleBox1, ((X_LENGTH-PADDLE_X),(Y_LENGTH/2-PADDLE_Y/2)))
     paddle2 = Sprite(paddleBox1, ((0),(Y_LENGTH/2-PADDLE_Y/2)))
     
