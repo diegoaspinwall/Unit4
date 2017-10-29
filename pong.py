@@ -49,11 +49,11 @@ def moveCircle():
 if __name__ == '__main__':
     
     data = {}
-    data['directionx'] = 10
-    data['directiony'] = 10
+    data['directionx'] = 20
+    data['directiony'] = 20
     
     black = Color(0x000000,1)
-    green = Color(0xffFFff,1)
+    green = Color(0x0000ff,1)
     blue = Color(0xffffFF,1)
     
     greenCircle = CircleAsset(CIRCLE_R,LineStyle(1,green),green)
