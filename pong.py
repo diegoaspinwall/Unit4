@@ -53,15 +53,15 @@ if __name__ == '__main__':
     data['directiony'] = 10
     
     black = Color(0x000000,1)
-    green = Color(0x0000ff,1)
-    blue = Color(0xffffFF,1)
+    circcolor = Color(0x0000ff,1)
+    padcolor = Color(0xffffFF,1)
     
-    greenCircle = CircleAsset(CIRCLE_R,LineStyle(1,green),green)
+    colorCircle = CircleAsset(CIRCLE_R,LineStyle(1,circcolor),circcolor)
     blackRectangle = RectangleAsset(X_LENGTH,Y_LENGTH,LineStyle(1,black),black)
-    paddleBox = RectangleAsset(PADDLE_X,PADDLE_Y,LineStyle(1,blue), blue)
+    paddleBox = RectangleAsset(PADDLE_X,PADDLE_Y,LineStyle(1,padcolor), padcolor)
     
     Sprite(blackRectangle)
-    circle = Sprite(greenCircle, (CIRCLE_R+PADDLE_X+10,CIRCLE_R+10))
+    circle = Sprite(colorCircle, (CIRCLE_R+PADDLE_X+10,CIRCLE_R+10))
     paddle1 = Sprite(paddleBox, ((X_LENGTH-PADDLE_X),(Y_LENGTH/2-PADDLE_Y/2)))
     paddle2 = Sprite(paddleBox, ((0),(Y_LENGTH/2-PADDLE_Y/2)))
     
