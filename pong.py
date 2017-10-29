@@ -58,11 +58,11 @@ if __name__ == '__main__':
     circcolor = Color(0xffffff,1)
     padcolor = Color(0xffffff,1)
     scorecolor = Color(0xffffff,1)
-    scoreBox = TextAsset('0 | 0', fill=scorecolor, style='bold 30pt Times')
     
     colorCircle = CircleAsset(CIRCLE_R,LineStyle(1,circcolor),circcolor)
     blackRectangle = RectangleAsset(X_LENGTH,Y_LENGTH,LineStyle(1,black),black)
     paddleBox = RectangleAsset(PADDLE_X,PADDLE_Y,LineStyle(1,padcolor), padcolor)
+    scoreBox = TextAsset('0 | 0', fill=scorecolor, style='bold 30pt Times')
     
     Sprite(blackRectangle)
     circle = Sprite(colorCircle, (CIRCLE_R+PADDLE_X+10,CIRCLE_R+10))
