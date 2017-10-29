@@ -58,7 +58,7 @@ if __name__ == '__main__':
     circcolor = Color(0xffffff,1)
     padcolor = Color(0xffffff,1)
     scorecolor = Color(0xffffff,1)
-    scoreBox = TextAsset('0 | 0', fill=scorecolor)
+    scoreBox = TextAsset('0 | 0', fill=scorecolor, style='bold 30pt Times')
     
     colorCircle = CircleAsset(CIRCLE_R,LineStyle(1,circcolor),circcolor)
     blackRectangle = RectangleAsset(X_LENGTH,Y_LENGTH,LineStyle(1,black),black)
@@ -68,7 +68,7 @@ if __name__ == '__main__':
     circle = Sprite(colorCircle, (CIRCLE_R+PADDLE_X+10,CIRCLE_R+10))
     paddle1 = Sprite(paddleBox, ((X_LENGTH-PADDLE_X),(Y_LENGTH/2-PADDLE_Y/2)))
     paddle2 = Sprite(paddleBox, ((0),(Y_LENGTH/2-PADDLE_Y/2)))
-    data['scoreText'] = Sprite(scoreBox,(X_LENGTH/2,Y_LENGTH-20))
+    data['scoreText'] = Sprite(scoreBox)
     
     App().listenKeyEvent('keydown','up arrow',moveUp)
     App().listenKeyEvent('keydown','down arrow',moveDown)
