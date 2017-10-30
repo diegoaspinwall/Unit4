@@ -53,7 +53,7 @@ def updateScore1():
     data['scoreText'].destroy()
     scoreBox = TextAsset((str(data['score1'])+'|'+str(data['score2'])),fill=scorecolor, style='bold 30pt Times')
     data['scoreText'] = Sprite(scoreBox)
-    if data['score1']==2:
+    if data['score1']==10:
         print('Player 1 wins')
         data['directionx'] = 0
         data['directiony'] = 0
@@ -63,7 +63,7 @@ def updateScore2():
     data['scoreText'].destroy()
     scoreBox = TextAsset((str(data['score1'])+'|'+str(data['score2'])),fill=scorecolor, style='bold 30pt Times')
     data['scoreText'] = Sprite(scoreBox)
-    if data['score2']==2:
+    if data['score2']==10:
         print('Player 2 wins')
         data['directionx'] = 0
         data['directiony'] = 0
