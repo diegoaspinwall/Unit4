@@ -51,13 +51,13 @@ def moveCircle():
 def updateScore1():
     data['score1'] += 1
     data['scoreText'].destroy()
-    scoreBox = TextAsset(str(data['score1']),'|',str(data['score2']))
+    scoreBox = TextAsset()str(data['score1'])+'|'+str(data['score2'])),fill=scorecolor, style='bold 30pt Times')
     data['scoreText'] = Sprite(scoreBox)
 
 def updateScore2():
     data['score2'] += 1
     data['scoreText'].destroy()
-    scoreBox = TextAsset(str(data['score1']),'|',str(data['score2']))
+    scoreBox = TextAsset((str(data['score1'])+'|'+str(data['score2'])),fill=scorecolor, style='bold 30pt Times')
     data['scoreText'] = Sprite(scoreBox)
 
 
