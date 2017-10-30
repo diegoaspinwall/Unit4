@@ -12,7 +12,7 @@ def average(n1,n2,n3):
 def lastLetter(word):
     for ch in word:
         letter = ch
-    return ch
+    print(ch)
 
 def same(num1,num2):
     if num1 == num2:
@@ -20,4 +20,7 @@ def same(num1,num2):
     else:
         return False
 
-lastLetter('Diego')
+csia()
+print(average(1,2,3))
+lastLetter('Smedinghoff')
+print(same(2*3,7-1))
