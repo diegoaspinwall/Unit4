@@ -46,11 +46,18 @@ def moveCircle():
         data['directionx'] = 10
         data['directiony'] = 10
 
-def updateScore():
-    data['score'] += 1
+def updateScore1():
+    data['score1'] += 1
     data['scoreText'].destroy()
-    scoreBox = TextAsset('Score = '+str(data['score']))
+    scoreBox = TextAsset(str(data['score1']),'|',str(data['score2']))
     data['scoreText'] = Sprite(scoreBox)
+
+def updateScore2():
+    data['score2'] += 1
+    data['scoreText'].destroy()
+    scoreBox = TextAsset(str(data['score1']),'|',str(data['score2']))
+    data['scoreText'] = Sprite(scoreBox)
+
 
 
 if __name__ == '__main__':
