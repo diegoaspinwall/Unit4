@@ -57,6 +57,8 @@ def updateScore1():
         print('Player 1 wins')
         data['directionx'] = 0
         data['directiony'] = 0
+        circle.x = X_LENGTH/2
+        circle.y = Y_LENGTH/2
 
 def updateScore2():
     data['score2'] += 1
@@ -67,6 +69,8 @@ def updateScore2():
         print('Player 2 wins')
         data['directionx'] = 0
         data['directiony'] = 0
+        circle.x = X_LENGTH/2
+        circle.y = Y_LENGTH/2
 
 
 if __name__ == '__main__':
